@@ -1,0 +1,136 @@
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    nav {
+        min-height: 12vh;
+    }
+
+    .navegacao {
+        width: 65%;
+    }
+
+    .nav-lista {
+        min-width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    nav li {
+        font-size: 84%;
+    }
+    
+    .nav-sanduba {
+        display: none;
+    }
+
+
+    header {
+        min-height: 76vh;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 3fr 3fr 1fr;
+    }
+
+    header div {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 110%;
+    }
+
+    .buttona {
+        padding: 1% 5%;
+        font-size: 115%;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    /* ---------- SECTION WE-CAN-DO-IT ---------- */
+    div.mais-tres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .we-can-do-it {
+         min-height: 68vh;
+    }
+
+    .we-can-do-it div {
+        width: 68;
+        min-height: 80%;
+    }
+
+    .we-can-do-it img {
+        width: 22%;
+    }
+
+    .we-can-do-it p {
+        font-size: 140%;
+        margin: 1% 0;
+    }
+
+
+    .vc-conhece > div {
+        width: 50%;
+    }
+
+    .mulher {
+        width: 26%;
+    }
+
+/* ---------- SECTION VC-CONHECE ---------- */
+    .alunas {
+        width: 60%;
+    }
+
+    .aluninha {
+        width: 15%;
+    }
+
+/* ---------- FOOTER ---------- */
+    footer > div {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 1%;
+    }
+
+    footer > div > div {
+        width: 30%;
+    }
+
+    footer li {
+        margin: 2% 0;
+    }
+
+    img.footer-imagem {
+        width: 65%;
+    }
+
+    .mensagemfinal {
+        font-size: 110%;
+    }
+
+    img.fb {
+        width: 7%;
+    }
+}
