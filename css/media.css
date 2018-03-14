@@ -31,25 +31,39 @@
     }
 
 
-    header {
+    /* header {
         min-height: 76vh;
         display: grid;
         grid-template-columns: 1fr 6fr;
-        grid-template-rows: 3fr 3fr 1fr;
-    }
+        grid-template-rows: 1fr 1fr;
+    } */
 
-    header div {
+    /* header div {
         grid-column-start: 2;
         grid-row-start: 2;
         text-align: left;
+    } */
+
+    header {
+        height: 68vh;
+        position: relative;
+        align-items: left;
+        text-align: left;
+        padding: 5% 10%;
+    }
+
+    header div {
+        position: absolute;
+        bottom: 10%;
     }
 
     h1 {
-        font-size: 180%;
+        font-size: 200%;
     }
 
     h2 {
         font-size: 110%;
+        margin: 2% 0;
     }
 
     .buttona {
@@ -80,6 +94,7 @@
 
     .we-can-do-it img {
         width: 22%;
+        object-fit: contain;
     }
 
     .we-can-do-it p {
@@ -132,5 +147,101 @@
 
     img.fb {
         width: 7%;
+    }
+
+
+
+    /* ---------- NOME-SOBRENOME ---------- */
+    /* ---------- OUTRA HEADER ---------- */
+    .outra-header {
+        padding: 5%;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .outra-header h1 {
+        font-size: 430%;
+        text-align: center;
+    }
+
+    /* ---------- PSERSONALIDADE ---------- */
+
+    .personalidade {
+        max-height: 100vh;
+        padding: 0;
+    }
+
+    .personalidade > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .personalidade > div > div {
+        width: 70%;
+    }
+
+    .personalidade .diva {
+        width: 20%;
+    }
+
+    .personalidade p {
+        font-size: 120%;
+    }
+
+    .personalidade .frase {
+        width: 70%;
+    }
+
+    /* ---------- HISTORIA ---------- */
+    .historia {
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .historia h3 {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .historia > div {
+        width: 80%;
+        display: flex;
+        padding: 1% 0;
+        font-size: 110%;
+    }
+
+    .historia .fotona {
+        height: 40vh;
+        margin: 0;
+    }
+
+    /* ---------- AUTORA ---------- */
+    .autora > div {
+        width: 60%;
+    }
+
+    .autora .foto-autora {
+        width: 15%; 
+    }
+
+    .autora .dados-autora {
+        font-size: 90%;
+    }
+    
+    /* ---------- PERFIS RECOMENDADOS ---------- */
+    .perfis-recomendados > div {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .perfis-recomendados > div > div {
+        width: 45%;
     }
 }
