@@ -89,7 +89,7 @@
         margin: 1% 0;
     }
 
-
+/* ---------- SECTION VC-CONHECE ---------- */
     .vc-conhece > div {
         width: 50%;
     }
@@ -98,13 +98,13 @@
         width: 26%;
     }
 
-/* ---------- SECTION VC-CONHECE ---------- */
+/* ---------- SECTION CRIADORAS ---------- */
     .alunas {
-        width: 60%;
+        width: 65%;
     }
 
     .aluninha {
-        width: 15%;
+        width: 13%;
     }
 
 /* ---------- FOOTER ---------- */
