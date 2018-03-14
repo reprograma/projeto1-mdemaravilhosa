@@ -30,22 +30,9 @@
         display: none;
     }
 
-
-    /* header {
-        min-height: 76vh;
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-        grid-template-rows: 1fr 1fr;
-    } */
-
-    /* header div {
-        grid-column-start: 2;
-        grid-row-start: 2;
-        text-align: left;
-    } */
-
+    /* ---------- HEADER ---------- */
     header {
-        height: 68vh;
+        height: 50vh;
         position: relative;
         align-items: left;
         text-align: left;
@@ -243,5 +230,28 @@
 
     .perfis-recomendados > div > div {
         width: 45%;
+    }
+
+    /* ---------- SOBRE ---------- */
+    /* ---------- ONDE SURGIU | PROJETO RELEVANTE ---------- */
+    section.onde-surgiu p, section.projeto-relevancia p {
+        font-size: 130%;
+        margin: 0.5% 0;
+    }
+
+    /* ---------- PROJETO RELEVANCIA ---------- */
+    .porcento {
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .porcento .estatistica {
+        font-size: 320%;
+    }
+
+    /* ---------- CRIADORAS ---------- */
+    .nome-aluna p {
+        font-size: 70%;
     }
 }
