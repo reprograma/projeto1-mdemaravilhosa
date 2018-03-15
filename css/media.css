@@ -32,7 +32,7 @@
 
     /* ---------- HEADER ---------- */
     header {
-        height: 50vh;
+        height: 56vh;
         position: relative;
         align-items: left;
         text-align: left;
@@ -54,7 +54,7 @@
     }
 
     .buttona {
-        padding: 1% 5%;
+        padding: 1% 4%;
         font-size: 115%;
     }
 
@@ -71,11 +71,12 @@
     }
 
     .we-can-do-it {
-         min-height: 68vh;
+         min-height: 50vh;
+         padding: 3% 0;
     }
 
     .we-can-do-it div {
-        width: 68;
+        width: 68%;
         min-height: 80%;
     }
 
@@ -94,8 +95,8 @@
         width: 50%;
     }
 
-    .mulher {
-        width: 26%;
+    .vc-conhece .mulher {
+        width: 20%;
     }
 
 /* ---------- SECTION CRIADORAS ---------- */
@@ -113,7 +114,6 @@
         justify-content: center;
         align-items: center;
         width: 70%;
-        margin: 1%;
     }
 
     footer > div > div {
@@ -140,23 +140,24 @@
 
     /* ---------- NOME-SOBRENOME ---------- */
     /* ---------- OUTRA HEADER ---------- */
-    .outra-header {
-        padding: 5%;
-        height: 30vh;
+    .outra-header, .why-header {
+        padding: 0 20%;
         display: flex;
-        justify-content: flex-end;
+    }
+
+    .why-header {
+        min-height: 73vh;
         align-items: center;
     }
 
-    .outra-header h1 {
+    .outra-header h1, .why-header h1 {
         font-size: 430%;
-        text-align: center;
     }
 
     /* ---------- PSERSONALIDADE ---------- */
 
     .personalidade {
-        max-height: 100vh;
+        min-height: 100vh;
         padding: 0;
     }
 
@@ -165,7 +166,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 60%;
     }
 
     .personalidade > div > div {
@@ -173,15 +174,17 @@
     }
 
     .personalidade .diva {
-        width: 20%;
+        width: 25%;
     }
 
-    .personalidade p {
-        font-size: 120%;
+    .personalidade p, .historia p {
+        font-size: 130%;
     }
 
     .personalidade .frase {
-        width: 70%;
+        width: 60%;
+        font-size: 150%;
+        margin: 0;
     }
 
     /* ---------- HISTORIA ---------- */
@@ -191,25 +194,29 @@
     }
 
     .historia h3 {
-        width: 80%;
+        width: 60%;
         margin-bottom: 0;
     }
 
     .historia > div {
-        width: 80%;
-        display: flex;
+        width: 60%;
         padding: 1% 0;
         font-size: 110%;
     }
 
     .historia .fotona {
-        height: 40vh;
+        height: 42vh;
         margin: 0;
+        width: 60%;
     }
 
     /* ---------- AUTORA ---------- */
+    .autora {
+        min-height: 40vh;
+    }
     .autora > div {
         width: 60%;
+        justify-content: center;
     }
 
     .autora .foto-autora {
@@ -217,41 +224,105 @@
     }
 
     .autora .dados-autora {
-        font-size: 90%;
+        font-size: 120%;
+        font-weight: bold;
+        margin: 0 5%;
+    }
+
+    .autora p {
+        padding: 1% 0;
     }
     
     /* ---------- PERFIS RECOMENDADOS ---------- */
     .perfis-recomendados > div {
-        width: 80%;
+        width: 60%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
     }
 
     .perfis-recomendados > div > div {
-        width: 45%;
+        display: flex;
+        align-items: center;
+        font-size: 120%;
     }
 
     /* ---------- SOBRE ---------- */
     /* ---------- ONDE SURGIU | PROJETO RELEVANTE ---------- */
-    section.onde-surgiu p, section.projeto-relevancia p {
+    .onde-surgiu, .projeto-relevancia {
+        padding: 1% 0 0 0;
+    }
+
+    .fotona-sobre {
+        width: 64%;
+        height: 24vh;
+    }
+
+    .onde-surgiu p, section.projeto-relevancia p {
         font-size: 130%;
         margin: 0.5% 0;
+        width: 63%;
     }
 
     /* ---------- PROJETO RELEVANCIA ---------- */
     .porcento {
+        width: 60%;
+    }
+
+    .porcento > div {
         flex-direction: row;
-        width: 80%;
-        justify-content: space-between;
+        width: 70%;
+    }
+
+    .porcento > div > p {
+        width: unset;
+        text-align: left;
     }
 
     .porcento .estatistica {
-        font-size: 320%;
+        font-size: 450%;
+        font-weight: 700;
+        margin: 0 5%;
     }
 
     /* ---------- CRIADORAS ---------- */
     .nome-aluna p {
         font-size: 70%;
     }
+
+    /* ---------- PERFIS ---------- */
+    /* ---------- VC-CONHECE ---------- */
+
+    .vc-conhece, .veja-todas {
+        padding: 1% 0;
+    }
+
+    .vc-conhece > div, .veja-todas > div {
+        width: 70%;
+    }
+
+    .veja-todas .mulher {
+        width: 50%;
+        margin: 3% 0;
+    }
+    .veja-todas .trinta .mulher a {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .veja-todas .mulher img {
+        width: 30%;
+    }
+
+    .veja-todas .mulher > div {
+        min-width: 40%;
+    }
+
+    .veja-todas .mulher p {
+        font-size: 100%;
+        margin-left: 5%;
+        width: 100%;
+    }
+
 }

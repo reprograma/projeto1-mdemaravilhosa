@@ -102,6 +102,7 @@ h3 {
     font-family: 'Roboto Slab', serif;
     color: #63458a;
     margin: 2%;
+    text-align: center;
 }
 
 /* ---------- SECTION WE-CAN-DO-IT ---------- */
@@ -133,7 +134,7 @@ h3 {
 
 /* ---------- SECTION VC-CONHECE ---------- */
 
-.vc-conhece {
+.vc-conhece, .veja-todas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,22 +142,22 @@ h3 {
     padding: 5% 0;
 }
 
-.vc-conhece p {
+.vc-conhece p, .veja-todas p {
     color: #63458a;
     margin: 0;
 }
 
-.vc-conhece > div {
+.vc-conhece > div, .veja-todas > div {
     width: 85%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 
-.mulher {
+.vc-conhece .mulher, .veja-todas .mulher {
     width: 40%;
-    margin: 3% 0;
+    margin: 3%;
 }
 
 .mulher img {
@@ -196,7 +197,7 @@ div.mais-tres {
 .aluninha {
     background-color: white;
     border-radius: 10px;
-    width: 30%;
+    width: 28%;
     margin: 1.5%;
     position: relative;
 }
@@ -270,9 +271,9 @@ img.fb {
 
 /* ---------- NOME-SOBRENOME ---------- */
 /* ---------- OUTRA HEADER ---------- */
-.outra-header {
+.outra-header, .why-header {
     display: flex;
-    min-height: 40vh;
+    min-height: 30vh;
     background: linear-gradient(rgba(140, 0, 255, 0.2),
                                 rgba(140, 0, 255, 0.2)),
                 url(../img/header.jpg);
@@ -280,6 +281,15 @@ img.fb {
     background-position: center center;
     background-repeat: no-repeat;
     justify-content: flex-end;
+}
+
+.why-header {
+    min-height: 50vh;
+}
+
+.outra-header h1, .why-header h1 {
+    width: 80%;
+    padding: 1% 0;
 }
 
 /* ---------- PERSONALIDADE ---------- */
@@ -303,11 +313,11 @@ img.fb {
 .personalidade .diva {
     width: 50%;
     margin: 2%;
+    background-color: #63458a;
 }
 
 .personalidade img {
     width: 100%;
-    background-color: #63458a;
     object-fit: contain;
 }
 
@@ -341,6 +351,7 @@ img.fb {
 
 .historia h3 {
     width: 80%;
+    text-align: left;
 }
 
 .historia > div {
@@ -403,10 +414,13 @@ img.fb {
     padding: 5% 0;
 }
 
+.perfis-recomendados > div > div {
+    background-color: #63458a;
+}
+
 .foto-recomendada {
     width: 100%;
     background: url(../img/img-mulher.png);
-    background-color: #63458a;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -471,9 +485,10 @@ img.fb {
     text-align: center;
 }
 
-.estatistica {
+p.estatistica {
     font-size: 300%;
     font-weight: bold;
+    color: black;
 }
 
 /* ---------- CRIADORAS ---------- */
