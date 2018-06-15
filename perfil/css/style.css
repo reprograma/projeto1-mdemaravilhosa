@@ -61,11 +61,11 @@ nav {
 }
 
 /* ---------- HEADER ---------- */
-header {
+/* header {
     min-height: 48vh;
     background: linear-gradient(rgba(212, 0, 255, 0.2),
                                 rgba(212, 0, 255, 0.2)),
-                url(../img/banner-claro.jpg);
+                url(../img/bia2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 5% 0;
-}
+} */
 
 header div {
     width: 80%;
@@ -274,9 +274,9 @@ img.fb {
 .outra-header, .why-header {
     display: flex;
     min-height: 30vh;
-    background: linear-gradient(rgba(140, 0, 255, 0.2),
+    /* background: linear-gradient(rgba(140, 0, 255, 0.2),
                                 rgba(140, 0, 255, 0.2)),
-                url(../img/bia.jpg);
+                url(../perfil/img/bia2.jpg); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -358,15 +358,6 @@ img.fb {
     width: 80%;
 }
 
-.historia .fotona {
-    width: 100%;
-    height: 28vh;
-    margin: 5% 0;
-    background: url(../img/header.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 /* ---------- AUTORA ---------- */
 .autora {
     background-color: #e4b7e5;
@@ -416,15 +407,6 @@ img.fb {
 
 .perfis-recomendados > div > div {
     background-color: #63458a;
-}
-
-.foto-recomendada {
-    width: 100%;
-    background: url(../img/img-mulher.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40vh;
 }
 
 .sobre-perfil-recomendado {
