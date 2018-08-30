@@ -1,6 +1,6 @@
 /* ---------- MOBILE FIRST - iPhone 7 - width<768px ---------- */
 /* ---------- INDEX ---------- */
-/* #region ----- GERAL ---------- */
+/* ---------- GERAL ---------- */
 * {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
@@ -23,9 +23,8 @@ a {
     padding: 3% 5%;
     border-radius: 5px;
 }
-/* #endregion */
 
-/* #region ----- NAV ---------- */
+/* ---------- NAV ---------- */
 nav {
     background-color: #674582;
     min-height: 9vh;
@@ -60,14 +59,11 @@ nav {
     background-color: #C083B9;
     border-radius: 5px;
 }
-/* #endregion */
 
-/* #region ----- HEADER ---------- */
+/* ---------- HEADER ---------- */
 header {
     min-height: 48vh;
-    background: linear-gradient(rgba(212, 0, 255, 0.2),
-                                rgba(212, 0, 255, 0.2)),
-                url(../img/header.jpg);
+    background: url("/perfil/img/alcione.jpg")
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -106,9 +102,8 @@ h3 {
     margin: 2%;
     text-align: center;
 }
-/* #endregion */
 
-/* #region ----- SECTION WE-CAN-DO-IT ---------- */
+/* ---------- SECTION WE-CAN-DO-IT ---------- */
 .we-can-do-it {
     min-height: 60vh;
     background: linear-gradient(to right, #7e5a9b, #B880B4);
@@ -133,9 +128,9 @@ h3 {
     font-size: 90%;
     margin: 3% 0;
 }
-/* #endregion */
 
-/* #region ----- SECTION VC-CONHECE ---------- */
+
+/* ---------- SECTION VC-CONHECE ---------- */
 
 .vc-conhece, .veja-todas {
     display: flex;
@@ -173,9 +168,8 @@ h3 {
 div.mais-tres {
     display: none;
 }
-/* #endregion */
 
-/* #region ----- SECTION CRIADORAS ---------- */
+/* ---------- SECTION CRIADORAS ---------- */
 .criadoras {
     background-color: #63458a;
     display: flex;
@@ -190,39 +184,28 @@ div.mais-tres {
     width: 70%;
 }
 
-/* #region código da nati */
-.criadoras > div {
+.alunas {
+    width: 90%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 0;
 }
-.foto {
-    width: 100%;
-    height: 100%;
-}
-.criadoras .grid {
-    width: 100%;
-    margin-bottom: 5vh;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 8%;
-    grid-row-gap: 1em;
-}
-@media (min-width: 768px) {
-    .criadoras .grid {
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-        grid-column-gap: 2%;
-        max-width: 70%;
-    }
-}
-/* #endregion */
-/* #endregion */
 
-/* #region ------ FOOTER ---------- */
+.aluninha {
+    background-color: white;
+    border-radius: 10px;
+    width: 28%;
+    margin: 1.5%;
+    position: relative;
+}
+
+.aluninha img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
     background-color: #323534;
     font-size: 80%;
@@ -283,16 +266,15 @@ img.fb {
     font-size: 85%;
     opacity: 0.5;
 }
-/* #endregion */
 
 /* ---------- NOME-SOBRENOME ---------- */
-/* #region ----- OUTRA HEADER ---------- */
+/* ---------- OUTRA HEADER ---------- */
 .outra-header, .why-header {
     display: flex;
     min-height: 30vh;
     background: linear-gradient(rgba(140, 0, 255, 0.2),
                                 rgba(140, 0, 255, 0.2)),
-                url(../img/header.jpg);
+                url("/perfil/img/alcione2.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -307,9 +289,8 @@ img.fb {
     width: 80%;
     padding: 1% 0;
 }
-/* #endregion */
 
-/* #region ----- PERSONALIDADE ---------- */
+/* ---------- PERSONALIDADE ---------- */
 .personalidade {
     display: flex;
     flex-direction: column;
@@ -338,10 +319,6 @@ img.fb {
     object-fit: contain;
 }
 
-figcaption {
-    font-size: 10px;
-}
-
 .personalidade p, .historia p {
     color: #63458a;
     margin: 1.5% 0;
@@ -361,9 +338,8 @@ figcaption {
     padding: 3%;
     font-size: 110%;
 }
-/* #endregion */
 
-/* #region ----- HISTORIA ---------- */
+/* ---------- HISTORIA ---------- */
 .historia {
     display: flex;
     flex-direction: column;
@@ -383,14 +359,13 @@ figcaption {
 .historia .fotona {
     width: 100%;
     height: 28vh;
-    margin: 5% 0;
-    background: url(../img/header.jpg);
+    margin: 0 0;
+    background: url(../perfil/img/alcione2.jpg);
     background-size: cover;
     background-position: center;
 }
-/* #endregion */
 
-/* #region ----- AUTORA ---------- */
+/* ---------- AUTORA ---------- */
 .autora {
     background-color: #e4b7e5;
     min-height: 20vh;
@@ -428,9 +403,8 @@ figcaption {
     text-decoration: underline;
     color: #63458a;
 }
-/* #endregion */
 
-/* #region ----- PERFIS RECOMENDADOS ---------- */
+/* ---------- PERFIS RECOMENDADOS ---------- */
 .perfis-recomendados {
     display: flex;
     flex-direction: column;
@@ -464,10 +438,9 @@ figcaption {
     color: #63458a;
     font-weight: bold;
 }
-/* #endregion */
 
 /* ---------- SOBRE ---------- */
-/* #region ----- ONDE SURGIU ---------- */
+/* ---------- ONDE SURGIU ---------- */
 .onde-surgiu, .projeto-relevancia {
     display: flex;
     flex-direction: column;
@@ -489,9 +462,8 @@ figcaption {
     background-size: cover;
     background-position: center;
 }
-/* #endregion */
 
-/* #region ----- PROJETO RELEVANCIA ---------- */
+/* ---------- PROJETO RELEVANCIA ---------- */
 .porcento {
     width: 70%;
     display: flex;
@@ -516,10 +488,8 @@ p.estatistica {
     font-weight: bold;
     color: black;
 }
-/* #endregion */
 
-/* #region ----- CRIADORAS ---------- */
-/*código da cintia: 
+/* ---------- CRIADORAS ---------- */
 .nome-aluna {
     position: absolute;
     bottom: 0;
@@ -540,64 +510,4 @@ p.estatistica {
 .p-perfis {
     text-align: left;
     font-size: 75%;
-}     */
-/* #region código da nati */
-/* .criadoras {
-    background-color: #63458a; 
-} */
-.criadoras > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.foto {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: auto;
-    flex-direction: column;
-    width: 100%;
-}
-.foto div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    overflow: auto;
-    flex-direction: column;
-    width: 100%;
-}
-.criadoras .grid {
-    width: 100%;
-    margin-bottom: 5vh;
-    max-width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 5%;
-    grid-row-gap: 1em;
-}
-.foto p {
-    margin: 0;
-    background-color: hsl(289, 100%, 71%, 0.6);
-    text-align: center;
-    font-size: 11px;
-    width: 100%;
-    color: white;
-}
-
-@media (min-width: 768px) {
-    .foto p {
-        font-size: 15px;
-    }
-    .criadoras .grid {
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: minmax(140px,auto);
-    } 
-    div.foto div {
-        flex-direction: row;
-        align-items: flex-end;
-    }
-}
-/* #endregion */
-/* #endregion */
+}    
