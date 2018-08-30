@@ -338,6 +338,10 @@ img.fb {
     object-fit: contain;
 }
 
+figcaption {
+    font-size: 10px;
+}
+
 .personalidade p, .historia p {
     color: #63458a;
     margin: 1.5% 0;
