@@ -324,7 +324,7 @@ img.fb {
 .personalidade p, .historia p {
     color: #63458a;
     margin: 1.5% 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .personalidade .frase {
@@ -362,7 +362,7 @@ img.fb {
     width: 100%;
     height: 28vh;
     margin: 5% 0;
-    background: url(../perfil/img/Elza-Soares-2-crédito-Rodrigo-Braga.jpg);
+    background: url(../img/header.jpg);
     background-size: cover;
     background-position: center;
 }
