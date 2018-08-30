@@ -1,6 +1,6 @@
 /* ---------- MOBILE FIRST - iPhone 7 - width<768px ---------- */
 /* ---------- INDEX ---------- */
-/* ---------- GERAL ---------- */
+/* #region ----- GERAL ---------- */
 * {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
@@ -23,8 +23,9 @@ a {
     padding: 3% 5%;
     border-radius: 5px;
 }
+/* #endregion */
 
-/* ---------- NAV ---------- */
+/* #region ----- NAV ---------- */
 nav {
     background-color: #674582;
     min-height: 9vh;
@@ -59,8 +60,9 @@ nav {
     background-color: #C083B9;
     border-radius: 5px;
 }
+/* #endregion */
 
-/* ---------- HEADER ---------- */
+/* #region ----- HEADER ---------- */
 header {
     min-height: 48vh;
     background: linear-gradient(rgba(212, 0, 255, 0.2),
@@ -104,8 +106,9 @@ h3 {
     margin: 2%;
     text-align: center;
 }
+/* #endregion */
 
-/* ---------- SECTION WE-CAN-DO-IT ---------- */
+/* #region ----- SECTION WE-CAN-DO-IT ---------- */
 .we-can-do-it {
     min-height: 60vh;
     background: linear-gradient(to right, #7e5a9b, #B880B4);
@@ -130,9 +133,9 @@ h3 {
     font-size: 90%;
     margin: 3% 0;
 }
+/* #endregion */
 
-
-/* ---------- SECTION VC-CONHECE ---------- */
+/* #region ----- SECTION VC-CONHECE ---------- */
 
 .vc-conhece, .veja-todas {
     display: flex;
@@ -170,8 +173,9 @@ h3 {
 div.mais-tres {
     display: none;
 }
+/* #endregion */
 
-/* ---------- SECTION CRIADORAS ---------- */
+/* #region ----- SECTION CRIADORAS ---------- */
 .criadoras {
     background-color: #63458a;
     display: flex;
@@ -186,28 +190,39 @@ div.mais-tres {
     width: 70%;
 }
 
-.alunas {
-    width: 90%;
+/* #region código da nati */
+.criadoras > div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2% 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-.aluninha {
-    background-color: white;
-    border-radius: 10px;
-    width: 28%;
-    margin: 1.5%;
-    position: relative;
-}
-
-.aluninha img {
+.foto {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
 }
+.criadoras .grid {
+    width: 100%;
+    margin-bottom: 5vh;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 8%;
+    grid-row-gap: 1em;
+}
+@media (min-width: 768px) {
+    .criadoras .grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-column-gap: 2%;
+        max-width: 70%;
+    }
+}
+/* #endregion */
+/* #endregion */
 
-/* ---------- FOOTER ---------- */
+/* #region ------ FOOTER ---------- */
 footer {
     background-color: #323534;
     font-size: 80%;
@@ -268,9 +283,10 @@ img.fb {
     font-size: 85%;
     opacity: 0.5;
 }
+/* #endregion */
 
 /* ---------- NOME-SOBRENOME ---------- */
-/* ---------- OUTRA HEADER ---------- */
+/* #region ----- OUTRA HEADER ---------- */
 .outra-header, .why-header {
     display: flex;
     min-height: 30vh;
@@ -291,8 +307,9 @@ img.fb {
     width: 80%;
     padding: 1% 0;
 }
+/* #endregion */
 
-/* ---------- PERSONALIDADE ---------- */
+/* #region ----- PERSONALIDADE ---------- */
 .personalidade {
     display: flex;
     flex-direction: column;
@@ -340,8 +357,9 @@ img.fb {
     padding: 3%;
     font-size: 110%;
 }
+/* #endregion */
 
-/* ---------- HISTORIA ---------- */
+/* #region ----- HISTORIA ---------- */
 .historia {
     display: flex;
     flex-direction: column;
@@ -366,8 +384,9 @@ img.fb {
     background-size: cover;
     background-position: center;
 }
+/* #endregion */
 
-/* ---------- AUTORA ---------- */
+/* #region ----- AUTORA ---------- */
 .autora {
     background-color: #e4b7e5;
     min-height: 20vh;
@@ -405,8 +424,9 @@ img.fb {
     text-decoration: underline;
     color: #63458a;
 }
+/* #endregion */
 
-/* ---------- PERFIS RECOMENDADOS ---------- */
+/* #region ----- PERFIS RECOMENDADOS ---------- */
 .perfis-recomendados {
     display: flex;
     flex-direction: column;
@@ -440,9 +460,10 @@ img.fb {
     color: #63458a;
     font-weight: bold;
 }
+/* #endregion */
 
 /* ---------- SOBRE ---------- */
-/* ---------- ONDE SURGIU ---------- */
+/* #region ----- ONDE SURGIU ---------- */
 .onde-surgiu, .projeto-relevancia {
     display: flex;
     flex-direction: column;
@@ -464,8 +485,9 @@ img.fb {
     background-size: cover;
     background-position: center;
 }
+/* #endregion */
 
-/* ---------- PROJETO RELEVANCIA ---------- */
+/* #region ----- PROJETO RELEVANCIA ---------- */
 .porcento {
     width: 70%;
     display: flex;
@@ -490,8 +512,10 @@ p.estatistica {
     font-weight: bold;
     color: black;
 }
+/* #endregion */
 
-/* ---------- CRIADORAS ---------- */
+/* #region ----- CRIADORAS ---------- */
+/*código da cintia: 
 .nome-aluna {
     position: absolute;
     bottom: 0;
@@ -512,4 +536,64 @@ p.estatistica {
 .p-perfis {
     text-align: left;
     font-size: 75%;
-}    
+}     */
+/* #region código da nati */
+/* .criadoras {
+    background-color: #63458a; 
+} */
+.criadoras > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: auto;
+    flex-direction: column;
+    width: 100%;
+}
+.foto div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: auto;
+    flex-direction: column;
+    width: 100%;
+}
+.criadoras .grid {
+    width: 100%;
+    margin-bottom: 5vh;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 5%;
+    grid-row-gap: 1em;
+}
+.foto p {
+    margin: 0;
+    background-color: hsl(289, 100%, 71%, 0.6);
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .foto p {
+        font-size: 15px;
+    }
+    .criadoras .grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(140px,auto);
+    } 
+    div.foto div {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+/* #endregion */
+/* #endregion */
